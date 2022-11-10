@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    padding: 0 5em 0 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text{
+    width: 40%;
+    color: white;
+    min-width: 500px;
+}
+
+h1{
+    font-size: 3.5rem;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    line-height: 30px;
+}
+
+.inputs{
+    min-width: 500px;
+    width: 40%;
+}
+
+.link{
+    background-color: rgb(143, 73, 208);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3.5px 3px rgba(0, 0, 0, 0.351);
+}
+
+.link p{
+    line-height: 50px;
+}
+
+.link a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+input{
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: 10px 0px 10px 0px;
+    border: solid;
+    border-color: hsl(246, 25%, 77%);
+    border-width: 1px;
+    padding-left: 30px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+input:focus{
+    outline-color: #800080;
+}
+
+.error{
+    color: #ff0000;
+    text-align: end;
+    width: 90%;
+    font-size: .7rem;
+    box-sizing: border-box;
+    padding: 2.5px 5px 7.5px 5px;
+}
+
+.error p{
+    font-size: .7rem;
+    color: red;
+}
+
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 30px 10px 30px 10px;
+    box-shadow: 0px 3.5px 3px rgba(0, 0, 0, 0.351);
+}
+
+button{
+    width: 90%;
+    height: 40px;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 3.5px 3px rgba(0, 0, 0, 0.351);
+}
+
+main p{
+    font-size: .8rem;
+    color: hsl(246, 25%, 77%);
+}
+
+main a{
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 400px){
+    
+    body{
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        background-image: url(images/bg-intro-mobile.png);
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .text{
+        width: 100%;
+        min-width: 350px;
+
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .text p{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+
+    .inputs{
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .link{
+        height: 80px;
+    }
+
+    .link p{
+        line-height: 80px;
+    }
+    
+    .inputs{
+        margin-bottom: 5px;
+    }
+
+    .error{
+        padding: 2.5px 5px 2.5px 5px;
+    }
+
+    .error p{
+        font-size: 0.65rem;
+    }
+
+    button{
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .inputs p{
+        text-align: center;
+    }
+}
